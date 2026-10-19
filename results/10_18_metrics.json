@@ -1,0 +1,71 @@
+{
+  "device": "cpu",
+  "train_rows": 400000,
+  "test_rows": 100000,
+  "train_fingerprint": 99980142373,
+  "test_fingerprint": 25019607627,
+  "icl_context": 10000,
+  "tabicl_predict_batch": 500,
+  "tabpfn_predict_batch": 32,
+  "metrics": {
+    "Linear Regression": {
+      "R\u00b2": 0.084682,
+      "MAE": 0.279493,
+      "MSE": 0.556939,
+      "RMSE": 0.746283
+    },
+    "LightGBM": {
+      "R\u00b2": 0.214698,
+      "MAE": 0.159246,
+      "MSE": 0.477828,
+      "RMSE": 0.691251
+    },
+    "XGBoost": {
+      "R\u00b2": 0.188366,
+      "MAE": 0.162235,
+      "MSE": 0.49385,
+      "RMSE": 0.702745
+    },
+    "LightGBM + XGBoost Hybrid": {
+      "R\u00b2": 0.209179,
+      "MAE": 0.159954,
+      "MSE": 0.481186,
+      "RMSE": 0.693676
+    },
+    "Random Forest": {
+      "R\u00b2": 0.219685,
+      "MAE": 0.159299,
+      "MSE": 0.474794,
+      "RMSE": 0.689053
+    },
+    "CatBoost": {
+      "R\u00b2": 0.229252,
+      "MAE": 0.159062,
+      "MSE": 0.468973,
+      "RMSE": 0.684816
+    },
+    "TabICLv2": {
+      "R\u00b2": 0.229629,
+      "MAE": 0.149585,
+      "MSE": 0.468744,
+      "RMSE": 0.684649
+    },
+    "TabPFN": {
+      "R\u00b2": 0.004348,
+      "MAE": 0.121428,
+      "MSE": 0.605819,
+      "RMSE": 0.778344
+    }
+  },
+  "section21_coefficients": {
+    "Attention Span (min)": -0.272963,
+    "Productivity Score": -0.241205,
+    "Study Hours per Week": -0.204449,
+    "Class Attendance Rate": -0.173815,
+    "Sleep Hours": -0.151078,
+    "Stress Level": 0.157466,
+    "Late Night Usage": 0.172443,
+    "Social Media Hours": 0.17845,
+    "Brain Rot Index": 0.244971
+  }
+}
